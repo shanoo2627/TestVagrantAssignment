@@ -9,6 +9,8 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.testng.Assert;
+import org.testng.Reporter;
 import org.testng.annotations.Test;
 
 import io.github.bonigarcia.wdm.WebDriverManager;
@@ -35,8 +37,8 @@ public class MovieInformationValidation extends BaseClass {
 		
 	
 		
-		//String text = driver.findElement(By.xpath("//a[.='Release date']/following-sibling::div")).getText();
-		//System.out.println("Release Date:-"+text);
+		//String IMDBReleaseDate = driver.findElement(By.xpath("//a[.='Release date']/following-sibling::div")).getText();
+		//System.out.println("Release Date:-"+IMDBReleaseDate);
 		
 		//String imdbCountryText = driver.findElement(By.xpath("//button[.='Country of origin']/following-sibling::div")).getText();
 		//System.out.println("Country of origin:-"+imdbCountryText);
@@ -51,8 +53,8 @@ public class MovieInformationValidation extends BaseClass {
 		wiki.getActualReleaseDate();
 		wiki.getActualCountryName();
 		
-		//String Text = driver.findElement(By.xpath("//tbody//div[.='Release date']/following::div[@class='plainlist']/descendant::li")).getText();
-		//System.out.println("Release Date:-"+Text);
+		//String imdbCountryText = driver.findElement(By.xpath("//tbody//div[.='Release date']/following::div[@class='plainlist']/descendant::li")).getText();
+		//System.out.println("Release Date:-"+IMDBReleaseDate);
 		
 		//String wikiCountryText = driver.findElement(By.xpath("//tbody//td[.='India']")).getText();
 		//System.out.println("Country:-"+wikiCountryText);
@@ -64,6 +66,10 @@ public class MovieInformationValidation extends BaseClass {
 		//	System.out.println(" ----> TC is fail");
 		//}
 		
+		//Assert.assertEquals(imdbCountryText, wikiCountryText);
+		//Reporter.log("Country is same",true);
+		//Assert.assertNotEquals(IMDBReleaseDate, WikiReleaseDate);
+		//Reporter.log("date format is diffrent",true);
 		
 		
 		
