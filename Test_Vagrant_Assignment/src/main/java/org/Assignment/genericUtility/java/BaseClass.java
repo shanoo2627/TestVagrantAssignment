@@ -47,13 +47,7 @@ public class BaseClass extends InstanceClass {
 		// Initialize the implicit wait,actions
 		webdriverUtility.intiallizeActions();
 
-		// create object for Common POM repo classes
-		 imdb = new IMDBDetails_InformationPage(driver);
-		 wiki = new WikiMovie_InformationPage(driver);
-
-		// Navigating the Application
-		webdriverUtility.openApplication(imdburl);
-		webdriverUtility.openApplication(wikiurl);
+	
 	}
 
 	@BeforeMethod

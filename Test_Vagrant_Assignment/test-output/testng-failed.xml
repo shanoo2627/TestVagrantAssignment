@@ -7,8 +7,8 @@
         <methods>
           <include name="imdbTest"/>
           <include name="methodTearDown"/>
-          <include name="classTearDown"/>
           <include name="classSetup"/>
+          <include name="classTearDown"/>
           <include name="suiteSetup"/>
           <include name="methodSetup"/>
         </methods>
